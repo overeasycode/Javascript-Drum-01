@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+body {
+  overflow: hidden;
+  background-image: url("https://i.pinimg.com/originals/e4/d6/d8/e4d6d8cf23796d001fde86388fb9a709.jpg");
+  background-size: 60%;
+  background-position: center 30%;
+  background-repeat: repeat;
+}
+body::after {
+  content: "";
+  background: radial-gradient(circle, rgba(216, 83, 103, 0.541) 1%, #161a30 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.keys {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 28em auto;
+  max-width: 1400px;
+  border: 0.9375rem solid #734191;
+  border-radius: 30px;
+  padding: 40px;
+  background-color: #2a1949;
+  box-shadow: 6px 5px 0px 0px rgba(0, 0, 0, 0.76) inset;
+  -webkit-box-shadow: 6px 5px 0px 0px rgba(0, 0, 0, 0.76) inset;
+  -moz-box-shadow: 6px 5px 0px 0px rgba(0, 0, 0, 0.76) inset;
+  transform: scale(80%);
+}
+.keys__key {
+  padding: inherit;
+  max-width: inherit;
+  background-color: rgba(216, 83, 103, 0.5);
+  border-radius: 30px;
+  transition: all 300ms;
+}
+.keys__key:not(:first-child) {
+  margin-left: 30px;
+}
+.keys__key kbd {
+  font-size: 40px;
+  font-family: "Luckiest Guy", sans-serif;
+  color: black;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+.playing {
+  background-color: #d85367;
+  transform: scale(120%);
+  box-shadow: 0 0 10px #ffc600;
+}/*# sourceMappingURL=style.css.map */
